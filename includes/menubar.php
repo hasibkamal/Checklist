@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Checklist</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-</head>
-<body>
-<div class="container" style="margin-top: 15px;">
-	<div class="row">
+<div class="row" style="margin-top:50px;">
 		<div class="col-md-12" style="padding: 0px;">
 			<div class="panel panel-info">
 				<div class="panel-heading">
@@ -19,7 +11,7 @@
 								<a href="">Basic form building, save, view & edit</a>
 							</li>
 							<li>
-								<a href="">Tab for big form</a>
+								<a href="step_form.php">Tab for big form [Step Form]</a>
 							</li>
 							<li>
 								<a href="">Form save as draft</a>
@@ -39,7 +31,7 @@
 								<a href="">PDF Viewer</a>
 							</li>
 							<li>
-								<a href="">Jquery validation</a>
+								<a href="jquery_validation.php">Jquery validation</a>
 							</li>
 							<li>
 								<a href="">Select2 / Auto-Complete plugins for dropdown list</a>
@@ -67,6 +59,3 @@
 			</div>
 		</div>
 	</div>
-</div>
-</body>
-</html>

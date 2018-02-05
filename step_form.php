@@ -5,22 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
-	<div class="container navbar navbar-default" style="margin-top: 15px;">
-		<div class="navbar-header">
-			<a href="" class="navbar-brand">HKC</a>
-		</div>
-	</div>
-	<div class="container">
-		<ol class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="index.php">Dashboard</a>
-            </li>
-            <li class="breadcrumb-item active">Step Form</li>
-        </ol>
-
-
-	<h1>Step Form</h1>
-	<hr/>
+<div class="container" style="margin-top: 15px;">
 	<div class="row">
 		<div class="col-md-12">
 			<div id="stepForm">
@@ -52,11 +37,11 @@
 			</div>
 		</div>
 	</div>
+	<?php require_once('includes/menubar.php'); ?>
+</div>
 
 
 
-
-	</div>
 	<link rel="stylesheet" type="text/css" href="css/jquery.steps.css">
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
