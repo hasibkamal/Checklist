@@ -42,7 +42,15 @@
 		</div>
 	</div>
 	<?php require_once('includes/menubar.php'); ?>
-	
+
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+	$('#form').on('submit',function(){
+		alert(1);
+		return false;
+	});
+	</script>
 </div>
 </body>
 </html>
