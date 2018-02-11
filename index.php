@@ -5,13 +5,35 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
-<div class="container" style="margin-top: 15px;">
+<div class="container">
 	<div class="row">
-		<div class="col-md-12">
-			
-		</div>
+		<?php require_once('includes/menubar.php'); ?>
 	</div>
-	<?php require_once('includes/menubar.php'); ?>
+
+	<div class="row">
+			<?php 
+			if(isset($page)){
+				switch ($page) {
+					case 'jqueryValidation':
+						require_once('./pages/jquery_validation_page.php');
+						break;
+
+					case 'stepForm':
+						require_once('./pages/step_form_page.php');
+						break;
+
+					case 'select2':
+						require_once('./pages/select2_page.php');
+						break;
+
+					default:
+						require_once('./index.php');
+						break;
+				}
+			}
+
+			?>
+	</div>
 	
 </div>
 </body>

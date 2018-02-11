@@ -1,16 +1,36 @@
-<div class="row" style="margin-top:50px;">
-		<div class="col-md-12" style="padding: 0px;">
+<?php
+$jqueryValidation = '';
+$stepForm = '';
+$select2 = '';
+if(isset($page)){
+	switch ($page) {
+		case 'jqueryValidation':
+			$jqueryValidation = 'active';
+			break;
+		case 'stepForm':
+			$stepForm = 'active';
+			break;
+		case 'select2':
+			$select2 = 'active';
+			break;
+		default:
+			# code...
+			break;
+	}
+}
+?>
+		<div class="col-md-12" style="margin-top: 15px;">
 			<div class="panel panel-info">
 				<div class="panel-heading">
-					<strong>Checklist</strong>
+					<strong>Checklist (Hasib Kamal Chowdhury)</strong>
 				</div>
 				<div class="panel-body" style="padding: 15px;">
 					<div class="col-md-4" style="padding: 0px;">
 						<ul class="nav nav-pills nav-stacked">
-							<li class="active">
+							<li>
 								<a href="">Basic form building, save, view & edit</a>
 							</li>
-							<li>
+							<li class="<?php echo $stepForm; ?>">
 								<a href="step_form.php">Tab for big form [Step Form]</a>
 							</li>
 							<li>
@@ -30,11 +50,11 @@
 							<li>
 								<a href="">PDF Viewer</a>
 							</li>
-							<li>
+							<li class="<?php echo $jqueryValidation; ?>">
 								<a href="jquery_validation.php">Jquery validation</a>
 							</li>
-							<li>
-								<a href="">Select2 / Auto-Complete plugins for dropdown list</a>
+							<li class="<?php echo $select2; ?>">
+								<a href="select2.php">Select2 / Auto-Complete plugins for dropdown list</a>
 							</li>
 						</ul>
 					</div>
@@ -58,4 +78,3 @@
 				</div>
 			</div>
 		</div>
-	</div>

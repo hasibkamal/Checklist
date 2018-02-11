@@ -1,4 +1,6 @@
-<?php 
-$page = 'stepForm';
+<?php
+$page = 'select2';
 require_once('index.php');
+
+
 ?>
