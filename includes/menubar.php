@@ -2,6 +2,8 @@
 $jqueryValidation = '';
 $stepForm = '';
 $select2 = '';
+$dataTable = '';
+$addRow = '';
 if(isset($page)){
 	switch ($page) {
 		case 'jqueryValidation':
@@ -12,6 +14,12 @@ if(isset($page)){
 			break;
 		case 'select2':
 			$select2 = 'active';
+			break;
+		case 'dataTable':
+			$dataTable = 'active';
+			break;
+		case 'addRow':
+			$addRow = 'active';
 			break;
 		default:
 			# code...
@@ -44,8 +52,8 @@ if(isset($page)){
 
 					<div class="col-md-4">
 						<ul class="nav nav-pills nav-stacked">
-							<li>
-								<a href="">Add row in table using JS/JQuery</a>
+							<li class="<?php echo $addRow; ?>">
+								<a href="add_row.php">Add row in table using JS/JQuery</a>
 							</li>
 							<li>
 								<a href="">PDF Viewer</a>
@@ -67,8 +75,8 @@ if(isset($page)){
 							<li>
 								<a href="">Show / hide portion of form conditionally</a>
 							</li>
-							<li>
-								<a href="">Data tables plugins</a>
+							<li class="<?php echo $dataTable; ?>">
+								<a href="data_table.php">Data tables plugins</a>
 							</li>
 							<li>
 								<a href="">Form preview</a>

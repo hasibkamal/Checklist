@@ -26,6 +26,14 @@
 						require_once('./pages/select2_page.php');
 						break;
 
+					case 'dataTable':
+						require_once('./pages/data_table_page.php');
+						break;
+
+					case 'addRow':
+						require_once('./pages/add_row_page.php');
+						break;
+
 					default:
 						require_once('./index.php');
 						break;
