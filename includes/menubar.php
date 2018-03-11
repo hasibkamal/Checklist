@@ -4,6 +4,7 @@ $stepForm = '';
 $select2 = '';
 $dataTable = '';
 $addRow = '';
+$pdfViewer = '';
 if(isset($page)){
 	switch ($page) {
 		case 'jqueryValidation':
@@ -20,6 +21,9 @@ if(isset($page)){
 			break;
 		case 'addRow':
 			$addRow = 'active';
+			break;
+		case 'pdfViewer':
+			$pdfViewer = 'active';
 			break;
 		default:
 			# code...
@@ -55,8 +59,8 @@ if(isset($page)){
 							<li class="<?php echo $addRow; ?>">
 								<a href="add_row.php">Add row in table using JS/JQuery</a>
 							</li>
-							<li>
-								<a href="">PDF Viewer</a>
+							<li class="<?php echo $pdfViewer; ?>">
+								<a href="pdf_viewer.php">PDF Viewer</a>
 							</li>
 							<li class="<?php echo $jqueryValidation; ?>">
 								<a href="jquery_validation.php">Jquery validation</a>

@@ -34,6 +34,10 @@
 						require_once('./pages/add_row_page.php');
 						break;
 
+					case 'pdfViewer':
+						require_once('./pages/pdf_viewer_page.php');
+						break;
+
 					default:
 						require_once('./index.php');
 						break;
