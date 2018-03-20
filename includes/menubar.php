@@ -5,6 +5,7 @@ $select2 = '';
 $dataTable = '';
 $addRow = '';
 $pdfViewer = '';
+$ajxFileUpload = '';
 if(isset($page)){
 	switch ($page) {
 		case 'jqueryValidation':
@@ -24,6 +25,9 @@ if(isset($page)){
 			break;
 		case 'pdfViewer':
 			$pdfViewer = 'active';
+			break;
+		case 'ajxFileUpload':
+			$ajxFileUpload = 'active';
 			break;
 		default:
 			# code...
@@ -48,8 +52,8 @@ if(isset($page)){
 							<li>
 								<a href="">Form save as draft</a>
 							</li>
-							<li>
-								<a href="">Image/File uploading using Ajax</a>
+							<li class="<?php echo $ajxFileUpload; ?>">
+								<a href="ajx_file_upload.php">Image/File uploading using Ajax</a>
 							</li>
 						</ul>	
 					</div>

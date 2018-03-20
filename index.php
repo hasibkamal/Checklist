@@ -38,6 +38,10 @@
 						require_once('./pages/pdf_viewer_page.php');
 						break;
 
+					case 'ajxFileUpload':
+						require_once('./pages/ajx_file_upload_page.php');
+						break;
+
 					default:
 						require_once('./index.php');
 						break;
