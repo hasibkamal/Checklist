@@ -6,6 +6,7 @@ $dataTable = '';
 $addRow = '';
 $pdfViewer = '';
 $ajxFileUpload = '';
+$formPreview = '';
 if(isset($page)){
 	switch ($page) {
 		case 'jqueryValidation':
@@ -28,6 +29,12 @@ if(isset($page)){
 			break;
 		case 'ajxFileUpload':
 			$ajxFileUpload = 'active';
+			break;
+		case 'formPreview':
+			$formPreview = 'active';
+			break;
+		case 'arithmeticJsForm':
+			$arithmeticJsForm = 'active';
 			break;
 		default:
 			# code...
@@ -77,8 +84,8 @@ if(isset($page)){
 					
 					<div class="col-md-4" style="padding: 0px;">
 						<ul class="nav nav-pills nav-stacked">
-							<li>
-								<a href="">Arithmetic inside form using js</a>
+							<li class="<?php echo $arithmeticJsForm; ?>">
+								<a href="arithmetic_js_form.php">Arithmetic inside form using js</a>
 							</li>
 							<li>
 								<a href="">Show / hide portion of form conditionally</a>
@@ -86,8 +93,8 @@ if(isset($page)){
 							<li class="<?php echo $dataTable; ?>">
 								<a href="data_table.php">Data tables plugins</a>
 							</li>
-							<li>
-								<a href="">Form preview</a>
+							<li class="<?php echo $formPreview; ?>">
+								<a href="form_preview.php">Form preview</a>
 							</li>
 						</ul>
 					</div>

@@ -42,6 +42,14 @@
 						require_once('./pages/ajx_file_upload_page.php');
 						break;
 
+					case 'formPreview':
+						require_once('./pages/form_preview_page.php');
+						break;
+
+					case 'arithmeticJsForm':
+						require_once('./pages/arithmetic_js_form_page.php');
+						break;
+
 					default:
 						require_once('./index.php');
 						break;

@@ -13,12 +13,16 @@
 						<div class="form-group">
 							<label class="btn btn-info">
 								<strong>Browse File</strong>
-								<input type="file" name="image" style="display:none">
+								<input type="file" class="image" name="image" style="display:none">
 							</label>
 						</div>
 						<div class="form-group">
 							<input type="submit" class="btn btn-primary" name="upload" value="Upload">
 						</div>
+					</div>
+
+					<div class="col-md-4">
+						<img class="img img-thumbnail" src="files/inventory.png" width="150" height="150">
 					</div>
 					
 				</form>
@@ -29,15 +33,7 @@
 
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
-	$(".addRow").on('click', function () {
-        var first_row = $('.table').find('.row').eq(0).clone();
-        first_row.find('input').val('');
-        first_row.find('.addRow').removeClass('addRow btn-info').addClass('removeRow btn-danger').html('Remove (-)');
-        $('.table').append(first_row);
-    });
-
-
-    $(document.body).on('click', '.removeRow', function () {
-        $(this).parent().parent().remove();
-    });
+	$('.image').on('change',function(){
+		console.log(this.files[0]);
+	});
 </script>
